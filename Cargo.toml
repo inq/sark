@@ -1,10 +1,10 @@
 [package]
 name = "sark"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Simple Asynchronous Rust webKit"
-authors = ["SARK Team"]
-repository = "https://github.com/sark/sark"
+authors = ["inkyu"]
+repository = "https://github.com/inq/sark"
 license = "MIT"
 
 [[example]]
@@ -16,7 +16,6 @@ name = "sark"
 path = "src/lib.rs"
 
 [dependencies]
-# async-trait removed - using native AFIT
 bytes = "1.5.0"
 futures = "0.3.30"
 http = "1.0.0"
@@ -30,4 +29,3 @@ num_cpus = "1.16.0"
 core_affinity = "0.8.0"
 percent-encoding = "2.3.0"
 tracing = "0.1"
-# once_cell removed - no longer using static handlers
